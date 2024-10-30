@@ -1,0 +1,120 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2020  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details, at
+# https://fpgasoftware.intel.com/eula.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 20.1.0 Build 711 06/05/2020 Patches 0.30 SJ Lite Edition
+# Date created = 13:01:43  April 04, 2024
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		Lab3_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE6E22C8
+set_global_assignment -name TOP_LEVEL_ENTITY Lab3b_BCD
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "20.1.0 SP0.30"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "13:01:42  APRIL 04, 2024"
+set_global_assignment -name LAST_QUARTUS_VERSION "23.1std.1 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_location_assignment PIN_128 -to A
+set_location_assignment PIN_121 -to B
+set_location_assignment PIN_125 -to C
+set_location_assignment PIN_129 -to D
+set_location_assignment PIN_132 -to E
+set_location_assignment PIN_126 -to F
+set_location_assignment PIN_124 -to G
+set_location_assignment PIN_88 -to S0
+set_location_assignment PIN_89 -to S1
+set_location_assignment PIN_133 -to Seg_1
+set_location_assignment PIN_135 -to Seg_2
+set_location_assignment PIN_136 -to Seg_3
+set_location_assignment PIN_137 -to Seg_4
+set_location_assignment PIN_23 -to FPGA_CLK
+set_location_assignment PIN_87 -to LED1
+set_location_assignment PIN_86 -to LED2
+set_location_assignment PIN_85 -to LED3
+set_location_assignment PIN_90 -to S2
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name BDF_FILE E.bdf
+set_global_assignment -name BDF_FILE Ripple4.bdf
+set_global_assignment -name BDF_FILE G.bdf
+set_global_assignment -name BDF_FILE F.bdf
+set_global_assignment -name BDF_FILE D.bdf
+set_global_assignment -name BDF_FILE C.bdf
+set_global_assignment -name BDF_FILE Bin_to_Hex.bdf
+set_global_assignment -name BDF_FILE B.bdf
+set_global_assignment -name BDF_FILE A.bdf
+set_global_assignment -name BDF_FILE 4to1Mux.bdf
+set_global_assignment -name BDF_FILE 2_to_4_DeMUX.bdf
+set_global_assignment -name BDF_FILE 2to4decoder.bdf
+set_global_assignment -name BDF_FILE Lab3.bdf
+set_global_assignment -name BDF_FILE output_files/D0.bdf
+set_global_assignment -name BDF_FILE output_files/D1.bdf
+set_global_assignment -name BDF_FILE output_files/D2.bdf
+set_global_assignment -name BDF_FILE output_files/D3.bdf
+set_global_assignment -name BDF_FILE "output_files/BCD counter.bdf"
+set_global_assignment -name BDF_FILE output_files/BCD_counter.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf
+set_global_assignment -name BDF_FILE Ripple16.bdf
+set_global_assignment -name BDF_FILE Ripple2.bdf
+set_global_assignment -name BDF_FILE Lab3b.bdf
+set_global_assignment -name BDF_FILE ClockDivider.bdf
+set_global_assignment -name BDF_FILE BCD_counter16.bdf
+set_global_assignment -name BDF_FILE Bin_to_Hex_Bus.bdf
+set_global_assignment -name BDF_FILE Lab4.bdf
+set_global_assignment -name BDF_FILE output_files/4to1Mux_Bus.bdf
+set_global_assignment -name BDF_FILE 2bit_leftshift.bdf
+set_global_assignment -name BDF_FILE output_files/Digit_leftshift.bdf
+set_global_assignment -name BDF_FILE NotSelect.bdf
+set_global_assignment -name BDF_FILE output_files/Digit_shift.bdf
+set_global_assignment -name BDF_FILE output_files/SSD_Driver.bdf
+set_global_assignment -name BDF_FILE Debouncer.bdf
+set_global_assignment -name BDF_FILE Lab4b.bdf
+set_global_assignment -name BDF_FILE Sequence_recogniser.bdf
+set_global_assignment -name BDF_FILE TEST.bdf
+set_global_assignment -name BDF_FILE output_files/BCD_counter_Bus.bdf
+set_global_assignment -name BDF_FILE Ripple16_Bus.bdf
+set_global_assignment -name BDF_FILE output_files/Full_Adder.bdf
+set_global_assignment -name BDF_FILE Operand_Logic.bdf
+set_global_assignment -name BDF_FILE Logic_Circuit.bdf
+set_global_assignment -name BDF_FILE Lab3_BCD.bdf
+set_global_assignment -name BDF_FILE Lab3b_BCD.bdf
+set_global_assignment -name TEXT_FILE README.txt
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
